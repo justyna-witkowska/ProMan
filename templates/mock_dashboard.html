@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for team in object_list %}
+
+        <p><a href="{% url 'mock_member_list_view' team.id %}">{{ team }}</a></p>
+
+    {% endfor %}
+
+{%  endblock %}
